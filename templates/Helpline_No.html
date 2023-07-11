@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  background: rgb(221,221,221);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info{
+  color: rgb(31, 29, 29);
+  max-width: 500px;
+  line-height: 65px;
+  padding-left: 50px;
+  font-size: 18px;
+}
+
+.contact-info i{
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+.contact-form{
+  max-width: 700px;
+  margin-right: 50px;
+}
+
+.contact-info, .contact-form{
+  flex: 1;
+}
+
+.contact-form h2{
+  color: rgb(16, 16, 16);
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.image-section{
+	float: right;
+	width: 40%;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 950px){
+  .contact-section{
+    flex-direction: column;
+  }
+
+  .contact-info, .contact-form{
+    margin: 30px 50px;
+  }
+
+  .contact-form h2{
+    font-size: 30px;
+    text-align: left;
+  }
+  .content-section .h2{
+	text-align: center;
+	font-size: 19px;
+}
+
+  .contact-form .text-box{
+    width: 100%;
+  }
+}
+.image-section{
+	float:none;
+	width:100%;
+	
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+
+
+
+.alert-success{
+  z-index: 1;
+  background: #D4EDDA;
+  font-size: 18px;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: fixed;
+  right: 0;
+  top: 10px;
+  border-left: 8px solid #3AD66E;
+  border-radius: 4px;
+}
+
+.alert-error{
+  z-index: 1;
+  background: #FFF3CD;
+  font-size: 18px;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: fixed;
+  right: 0;
+  top: 10px;
+  border-left: 8px solid #FFA502;
+  border-radius: 4px;
+}
+
+
+    </style>
+  </head>
+  <body>
+
+    
+    <div class="contact-section">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form class="contact" action="" method="post">
+            </div>
+        
+              
+      <div class="contact-info">
+        <div><i class="fas fa-map-marker-alt"></i>At your door </div>
+        <div><i class="fas fa-envelope"></i>service provider@gmail.com</div>
+        <div><i class="fas fa-phone"></i>+089-765432100</div>
+        <div><i class="fas fa-clock"></i>24x7</div>
+      </div>
+      
+    </div>
+      
+        </form>
+      
+      <div class="image-section">
+        <img src="contact.jpg">
+    </div>
+    </div>
+    
+
+  </body>
+</html>
+      
